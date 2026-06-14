@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcheUPA — UPAs do Distrito Federal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">Ache<span>UPA</span></div>
+    <a class="header-samu" href="tel:192">🚑 SAMU: 192</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">🏥 13 UPAs · Distrito Federal · Atendimento 24h</div>
+  <h1>Encontre a UPA mais <em>perto de você</em></h1>
+  <p>Selecione a cidade ou busque pelo nome da unidade.</p>
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Buscar por nome ou endereço…" autocomplete="off" />
+    <span class="search-icon">🔍</span>
+  </div>
+</div>
+
+<div class="samu-banner">
+  <a href="tel:192">
+    <span class="samu-icon">🚑</span>
+    <div class="samu-text">
+      <strong>Emergência? Ligue 192 — SAMU</strong>
+      <span>Para casos graves como parada cardíaca, hemorragia ou acidente, chame o SAMU antes de se deslocar.</span>
+    </div>
+  </a>
+</div>
+
+<div class="info-banner">
+  <a href="https://www.saude.df.gov.br/upa-24h" target="_blank" rel="noopener">
+    <span>ℹ️</span>
+    <span>Para mais informações sobre as UPAs do DF, acesse o site oficial da Secretaria de Saúde do GDF</span>
+    <span class="info-arrow">→</span>
+  </a>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="results-header">
+  <p class="results-count" id="resultsCount"></p>
+</div>
+
+<div class="cards" id="cards"></div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <span class="modal-cidade-tag" id="modalCidade"></span>
+    <h2 id="modalTitle"></h2>
+    <span class="modal-open-tag">🕐 Aberta 24h · Todos os dias</span>
+    <div class="modal-field">
+      <label>Endereço</label>
+      <p id="modalAddress"></p>
+    </div>
+    <div class="modal-field">
+      <label>Telefone</label>
+      <p id="modalPhone"></p>
+    </div>
+    <div class="modal-field">
+      <label>Gestão</label>
+      <p>IgesDF — Instituto de Gestão Estratégica de Saúde do DF</p>
+    </div>
+    <div class="modal-actions">
+      <a class="btn-maps" id="modalMaps" href="#" target="_blank" rel="noopener">📍 Maps</a>
+      <a class="btn-phone" id="modalPhoneLink" href="#">📞 Ligar</a>
+    </div>
+    <div class="modal-actions" style="margin-top:8px">
+      <a class="btn-corrida" id="modalCorrida" href="#" target="_blank" rel="noopener">🚗 Corrida</a>
+      <a class="btn-waze" id="modalWaze" href="#" target="_blank" rel="noopener">🗺 Waze</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>AcheUPA</strong> — UPAs do Distrito Federal<br>
+  Dados: <a href="https://www.saude.df.gov.br/upa-24h" target="_blank">SES-DF</a> e <a href="https://igesdf.org.br" target="_blank">IgesDF</a> · Projeto extensionista · 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
