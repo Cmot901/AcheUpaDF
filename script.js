@@ -35,7 +35,7 @@ const upas = [
     nome: "UPA Gama",
     cidade: "Gama",
     endereco: "SIND QI 7, Gama - DF",
-    telefone: "(61) 3550-8900 " + " (Ramal: 8605)",
+    telefone: "(61) 3550-8900 " + " (Ramal: 8632)",
     lat: -16.0074, lng: -48.0613,
     maps: "https://maps.google.com/?q=UPA+Gama+Quadra+AC+102+DF",
     waze: "https://www.waze.com/pt-BR/live-map/directions/br/df/upa-gama?navigate=yes&to=place.ChIJU-Rr0V6BWZMRbMWhINlxARM"
