@@ -23,7 +23,7 @@ const upas = [
   {
     id: 3,
     nome: "UPA Ceilândia II",
-    cidade: "Ceilândia",
+    cidade: "Ceilândia II",
     endereco: "Setor O, QNO 21, Área Especial D — Ceilândia - DF",
     telefone: "(61) 3550-8900 " + " (Ramal: 8605)",
     lat: -15.8321, lng: -48.1143,
